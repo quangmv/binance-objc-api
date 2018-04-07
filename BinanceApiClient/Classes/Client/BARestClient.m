@@ -124,6 +124,7 @@
                         callback:(BARestRequestCompleteBlock)callback {
     BARestKLinesApi *kLinesApi = [[BARestKLinesApi alloc] initWithSymbol:symbol kKLineInterval:interval startTime:startTime endTime:endTime limit:limit];
     [self startRequest:kLinesApi withCompleteBlock:callback];
+    return nil;
 }
 
 - (void)ticker24HourWithSymbol:(NSString *)symbol callback:(BARestRequestCompleteBlock)callback {

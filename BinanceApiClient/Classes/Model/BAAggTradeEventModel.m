@@ -25,3 +25,7 @@
 }
 
 @end
+
+@implementation BAStreamAggTradeEventModel
+@end
+

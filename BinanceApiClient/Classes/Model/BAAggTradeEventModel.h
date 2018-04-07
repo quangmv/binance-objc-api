@@ -19,3 +19,10 @@
 @property(nonatomic, assign) BOOL isBuyerMaker;
 
 @end
+
+@interface BAStreamAggTradeEventModel : BAJSONModel
+
+@property(nonatomic, copy) NSString *stream;
+@property(nonatomic, strong) BAAggTradeEventModel *data;
+
+@end

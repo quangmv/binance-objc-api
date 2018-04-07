@@ -9,7 +9,10 @@
 #import "BAEnums.h"
 #import "BAWebSocketEventModel.h"
 
+@class BAStreamAggTradeEventModel;
+
 typedef void (^BAWebSocketEventBlock)(__kindof BAWebSocketEventModel *eventModel);
+typedef void (^BAStreamAggTradeEventBlock)(__kindof BAStreamAggTradeEventModel *eventModel);
 
 @protocol BAWebSocketClientProtocol <NSObject>
 
@@ -18,6 +21,8 @@ typedef void (^BAWebSocketEventBlock)(__kindof BAWebSocketEventModel *eventModel
 - (void)onKLineEventWithSymbol:(NSString *)symbol interval:(kKLineInterval)interval listen:(BAWebSocketEventBlock)eventHandleBlock;
 
 - (void)onTradeEventWithSymbol:(NSString *)symbol listen:(BAWebSocketEventBlock)eventHandleBlock;
+
+- (void)onTradeEventWithSymbols:(NSArray *)symbols listen:(BAStreamAggTradeEventBlock)eventHandleBlock;
 
 - (void)onUserDataEventWithListenKey:(NSString *)listenKey listen:(BAWebSocketEventBlock)eventHandleBlock;
 
