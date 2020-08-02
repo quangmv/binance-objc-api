@@ -30,6 +30,7 @@
 #import "BARestKeepAliveUserStreamApi.h"
 #import "BARestCloseUserStreamApi.h"
 #import "BACommonMacro.h"
+#import "BARestExchangeApi.h"
 
 @interface BARestClient : NSObject <BARestClientProtocol>
 

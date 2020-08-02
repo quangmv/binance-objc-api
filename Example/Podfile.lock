@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - BinanceApiClient (0.1.0):
+  - BinanceApiClient (0.1.1):
     - BlocksKit (~> 2.2.0)
     - CocoaLumberjack (~> 2.3.0)
     - JSONModel (~> 1.7.0)
@@ -55,13 +55,23 @@ PODS:
 DEPENDENCIES:
   - BinanceApiClient (from `../`)
 
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - BlocksKit
+    - CocoaLumberjack
+    - JSONModel
+    - SocketRocket
+    - YTKNetwork
+    - YYCategories
+
 EXTERNAL SOURCES:
   BinanceApiClient:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  BinanceApiClient: cf9858fc677ab26f1ae8be149f2ccf4120af8aa0
+  BinanceApiClient: 7597fe2f1e485c34e34b3227d4013a5818fdda19
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
@@ -71,4 +81,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 07f11bc33fb74111e66df3560dfab13ec9cb77b5
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.9.3

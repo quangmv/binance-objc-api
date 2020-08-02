@@ -1,6 +1,6 @@
 {
   "name": "BinanceApiClient",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "A lightweight client lib for Binance.com",
   "description": "BinanceApiClient is a lightweight client lib for Binance.com,\n which fullfill all the APIs provided by [Binance](https://www.binance.com/restapipub.html).",
   "homepage": "https://github.com/xilin/binance-objc-api",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/xilin/binance-objc-api.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"

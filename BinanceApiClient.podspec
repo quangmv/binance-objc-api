@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BinanceApiClient'
-  s.version          = '0.1.0'
+  s.version          = '0.1.2'
   s.summary          = 'A lightweight client lib for Binance.com'
 
 

@@ -96,6 +96,11 @@
     [self startRequest:serverTimeApi withCompleteBlock:callback];
 }
 
+- (void)exchange:(BARestRequestCompleteBlock)callback {
+    BARestExchangeApi *exchangeApi = [[BARestExchangeApi alloc] init];
+    [self startRequest:exchangeApi withCompleteBlock:callback];
+}
+
 #pragma mark - market
 - (void)orderBookWithSymbol:(NSString *)symbol limit:(NSInteger)limit callback:(BARestRequestCompleteBlock)callback {
     BARestOrderBookApi *orderBookApi = [[BARestOrderBookApi alloc] initWithSymbol:symbol limit:limit];
@@ -141,6 +146,8 @@
     BARestTickerAllBookTickersApi *allBookTickersApi = [[BARestTickerAllBookTickersApi alloc] init];
     [self startRequest:allBookTickersApi withCompleteBlock:callback];
 }
+
+
 
 #pragma mark - account
 - (void)createOrderWithParam:(BACreateOrderModel *)createOrderModel

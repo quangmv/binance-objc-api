@@ -20,6 +20,7 @@ typedef void (^BARestRequestCompleteBlock)(__kindof BARestRequest *request, BOOL
 // General
 - (void)ping:(BARestRequestCompleteBlock)callback;
 - (void)serverTime:(BARestRequestCompleteBlock)callback;
+- (void)exchange:(BARestRequestCompleteBlock)callback;
 
 // Market
 - (void)orderBookWithSymbol:(NSString *)symbol limit:(NSInteger)limit callback:(BARestRequestCompleteBlock)callback;
