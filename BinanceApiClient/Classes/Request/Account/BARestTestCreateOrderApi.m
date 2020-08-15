@@ -39,9 +39,11 @@
     requestArgument[@"symbol"] = model.symbol;
     requestArgument[@"side"] = model.side == kOrderSideBuy ? @"BUY" : @"SELL";
     requestArgument[@"type"] = model.type == kOrderTypeLimit ? @"LIMIT" : @"MARKET";
-    requestArgument[@"timeInForce"] = model.timeInForce == kTimeInForceGTC ? @"GTC" : @"IOC";
+    if (model.type == kOrderTypeLimit) {
+        requestArgument[@"timeInForce"] = model.timeInForce == kTimeInForceGTC ? @"GTC" : @"IOC";
+        requestArgument[@"price"] = model.price;
+    }
     requestArgument[@"quantity"] = model.quantity;
-    requestArgument[@"price"] = model.price;
     if (STRING_HAS_VALUE(model.latestClientOrderId)) {
         requestArgument[@"newClientOrderId"] = model.latestClientOrderId;
     }
